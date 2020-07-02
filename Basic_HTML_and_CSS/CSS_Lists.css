@@ -1,0 +1,10 @@
+ol {
+	list-style-type: upper-roman;
+	color: darkred;
+	font-style: bold;
+}
+ul {
+	list-style-type: square;
+	color: darkblue;
+	font-style: bold;
+}

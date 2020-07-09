@@ -1,0 +1,88 @@
+/* HTML text style */
+html {
+    font-family: sans-serif;
+    font-size: 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Home */
+.head-main {
+    font-size: 4.5em;
+    font-family: impact, sans-serif;
+}
+
+.head-sub-main {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.head-last {
+    font-size: 18px;
+}
+
+/* Gallery */
+
+/* Contact */
+.support h2 {
+    font-size: 1.3em;
+}
+
+.support h2 span {
+    font-size: 1.5em;
+}
+
+.support form {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.support input[type="text"] {
+    font-size: 15px;
+    width: 80%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.change-link {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.submit input[type="submit"] {
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 3%;
+    width: 25%;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+/* Footer */
+#footer {
+    background-color: rgba(100,65,0,.3);
+    color: #000;
+    text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}

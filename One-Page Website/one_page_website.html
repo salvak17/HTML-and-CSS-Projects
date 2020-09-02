@@ -53,122 +53,113 @@
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
-		<section id="gallery">
-			<div class="container">
-				<h1>Gallery</h1>
-				<div class="flex-container">
-					
-					<!-- PHOTO CONTAINER 1 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_1.png" alt="Vanessa Guillen in uniform">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Help us find justice for Vanessa Guillen</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 1 -->
-					
-					<!-- PHOTO CONTAINER 2 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_2.png" alt="Mural Honoring Vanessa Guillen">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Mural honoring Vanessa Guillen</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 2 -->
-					
-					<!-- PHOTO CONTAINER 3 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_3.png" alt="Vanessa Guillen in casual picture">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Help us find justice for Vanessa Guillen</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 3 -->
-					
-					<!-- PHOTO CONTAINER 4 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_4.png" alt="Mural Honoring Vanessa Guillen">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Mural honoring Vanessa Guillen</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 4 -->
-					
-					<!-- PHOTO CONTAINER 5 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_5.png" alt="Press picture">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Help us find justice for Vanessa Guillen</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 5 -->
-					
-					<!-- PHOTO CONTAINER 6 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_6.png" alt="Suspect Aaron Robinson">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Aaron Robinson</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 6 -->
-					
-					<!-- PHOTO CONTAINER 7 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_7.png" alt="Press picture">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Help us find justice for Vanessa Guillen</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 7 -->
-					
-					<!-- PHOTO CONTAINER 8 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_8.png" alt="Suspect Cecily Aguilar">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Cecily Aguilar</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 8 -->
-					
-					<!-- PHOTO CONTAINER 9 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumb/thumbnail_9.png" alt="Picture of Fort Hood's sign">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Fort Hood</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 9 -->
-					
+		<!-- images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Vanessa Guillen Portrait">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Vanessa Guillen Mural">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Vanessa Guillen">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Vanessa Guillen Mural">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_5.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Vanessa Guillen Family">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_6.png" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Suspect">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_7.png" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="Press">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_8.png" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="Suspect">
+			</div>
+			<div class="column">
+				<img src="./Images/Thumb/thumbnail_9.png" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="Fort Hood">
+			</div>
+		</div>
+		<!-- the modal/lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1/9</div>
+					<img src="./Images/Thumb/thumbnail_1_wide.png" style="width:100%" alt="Vanessa Guillen Portrait">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2/9</div>
+					<img src="./Images/Thumb/thumbnail_2_wide.png" style="width:100%" alt="Vanessa Guillen Mural">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3/9</div>
+					<img src="./Images/Thumb/thumbnail_3_wide.png" style="width:100%" alt="Vanessa Guillen">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4/9</div>
+					<img src="./Images/Thumb/thumbnail_4_wide.png" style="width:100%" alt="Vanessa Guillen Mural">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">5/9</div>
+					<img src="./Images/Thumb/thumbnail_5_wide.png" style="width:100%" alt="Vanessa Guillen Family">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">6/9</div>
+					<img src="./Images/Thumb/thumbnail_6_wide.png" style="width:100%" alt="Suspect">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">7/9</div>
+					<img src="./Images/Thumb/thumbnail_7_wide.png" style="width:100%" alt="Press">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">8/9</div>
+					<img src="./Images/Thumb/thumbnail_8_wide.png" style="width:100%" alt="Suspect">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">9/9</div>
+					<img src="./Images/Thumb/thumbnail_9_wide.png" style="width:100%" alt="Fort Hood">
+				</div>
+				<!-- next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<!-- caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				<!-- thumbnail image controls -->
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_1.png" onclick="currentSlide(1)" alt="Vanessa Guillen Portrait">
+				</div>
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_2.png" onclick="currentSlide(2)" alt="Vanessa Guillen Mural">
+				</div>
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_3.png" onclick="currentSlide(3)" alt="Vanessa Guillen">
+				</div>
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_4.png" onclick="currentSlide(4)" alt="Vanessa Guillen Mural">
+				</div>
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_5.png" onclick="currentSlide(5)" alt="Vanessa Guillen Family">
+				</div>
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_6.png" onclick="currentSlide(6)" alt="Suspect">
+				</div>
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_7.png" onclick="currentSlide(7)" alt="Press">
+				</div>
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_8.png" onclick="currentSlide(8)" alt="Suspect">
+				</div>
+				<div class="column">
+					<img class="thumbImgCtrl" src="./Images/Thumb/thumbnail_9.png" onclick="currentSlide(9)" alt="Fort Hood">
 				</div>
 			</div>
-		</section>
+		</div>
 		<!-- END GALLERY -->
 		
 		<!-- SIGN TO SUPPORT -->

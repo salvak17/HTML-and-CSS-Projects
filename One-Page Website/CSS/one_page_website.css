@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.5em;
     font-family: impact, sans-serif;
 }
-
 .head-sub-main {
     font-size: 23px;
     font-weight: 500;
@@ -46,10 +45,17 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
 /* creates 9 equal columns that float next to each other */
+/*
 .column {
     float: left;
-    width: 11%;
+    width: 11.11%;
 }
+*/
+.column img{
+    width: auto;
+    max-width: 10.8vw;
+    float: left;
+    }
 /* the modal background */
 .modal {
     display: none;

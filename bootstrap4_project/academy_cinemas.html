@@ -123,16 +123,75 @@
           </div>
           <!-- /showtimes -->
 
-          <!-- MOVIE REWARDS -->
+          <!-- Jumbotron Heading -->
+          <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+              <h1 class="display-4 hidden-xm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">Movie Deals</h1>
+              <p class="lead">Check out our monthly deals...</p>
+              <!-- movie deals -->
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+              <!-- /movie deals -->
+            </div>
+          </div>
+          <!-- /Jumbotron Heading -->
+
+          <!-- MOVIE REWARDS (sign up) -->
           <div class="text-center" id="deals">
                 <form>
                     <h1 class="text-primary my-5">Sign up for Movie Club rewards!</h1>
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve great movie reward deals!">
+                      Submit
+                    </button>
                 </form>
           </div>
+          <!-- /Movie Rewards-->
+
+          <!-- FORM MODAL -->
+          <div class="modal" id="register" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to receive movie deals...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <fieldset class="form-group">
+                      <label for="firstname">First Name:</label>
+                      <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="lastname">Last Name:</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="password">Password:</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password...">
+                    </fieldset>
+                  </form>
+                </div>
+                <!-- Challenge: utilize Bootstrap componenet of my choosing (checkbox) -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Sign up for our weekly newsletter (optional)</label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /FORM MODAL -->
 
           <!-- FOOTER -->
           <div class="container my-5">
@@ -155,9 +214,15 @@
     </div>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
+
+  <script>
+    $('.popover-dismiss').popover({
+    trigger: 'focus'
+    })
+  </script>
 </html>
